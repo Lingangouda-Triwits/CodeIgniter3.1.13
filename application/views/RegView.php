@@ -10,7 +10,9 @@
 
 <div class="container">
   <h2>Registartion Form</h2>
-  <?php echo @$message; ?>
+  <?php 
+//   echo @$message;
+   ?>
   <form method="post" enctype="multipart/formdata">
     <div class="form-group">
       <label for="email">Name:</label>

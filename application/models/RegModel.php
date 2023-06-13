@@ -14,17 +14,27 @@ class RegModel extends CI_Model
 $result = $query->result(); 
 
 		$row = $query->num_rows();
-		if($row)
-		{
-		$data['message']="<h3 style='color:red'>This user already registered</h3>";
-		}
-		else
-		{
-		$query=$this->db->query("insert into user set name='$name',email='$email',phone='$phone',password='$password'");
+		// if($row)
+		// {
+		// $data['message']="<h3 style='color:red'>This user already registered</h3>";
+		// }
+		// else
+		// {
+		// $query=$this->db->query("insert into user set name='$name',email='$email',phone='$phone',password='$password'");
 
-		$data['message']="<h3 style='color:blue'>You are registered successfully</h3>";
-		}
-		$this->load->view('RegView',@$data);
-		}
+		// $data['message']="<h3 style='color:blue'>You are registered successfully</h3>";
+		// }
+		// $this->load->view('RegView',@$data);
 
-	}
+
+if ($row) {
+    echo "<script>alert('This user already registered');</script>";
+} else {
+    $query = $this->db->query("insert into user set name='$name',email='$email',phone='$phone',password='$password'");
+    echo "<script>alert('You are registered successfully');</script>";
+}
+$this->load->view('RegView', @$data);
+
+
+}
+}
