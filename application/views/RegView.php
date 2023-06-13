@@ -107,6 +107,9 @@
             display: inline-block;
             box-sizing: border-box;
         }
+        #password{
+          width: 64%;
+        }
 
         button {
             padding: 10px 20px;
@@ -119,6 +122,7 @@
             font-size: 1.2rem;
             position: relative;
             top:22px;
+            left: 40px;
         }
 
         button:hover {
@@ -143,12 +147,6 @@
                 width: 40%;
             }
         }
-
-        i {
-            position: relative;
-            right: 20px;
-        }
-
         h2{
             margin-bottom: 20px;
             font-style: italic;
