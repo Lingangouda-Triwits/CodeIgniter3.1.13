@@ -11,8 +11,7 @@ class RegModel extends CI_Model
     ->where("(email='$email' || phone='$phone')")
     ->get();
 
-$result = $query->result(); 
-
+        $result = $query->result(); 
 		$row = $query->num_rows();
 		// if($row){
 		// $data['message']="<h3 style='color:red'>This user already registered</h3>";
