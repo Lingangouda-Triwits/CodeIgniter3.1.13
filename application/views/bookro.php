@@ -15,7 +15,7 @@
         crossorigin="anonymous"></script>
 
 
-    <link rel="shortcut icon" href="./images/favicon1.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/favicon1.ico" type="image/x-icon">
     <title>Bookro website</title>
     <style>
     * {
@@ -26,7 +26,7 @@
     body {
       width: 100vw;
       height: 100vh;
-      background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("./images/cardrive.png");
+      background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("images/cardrive.jpg");
       background-size: cover;
       background-position: center;
       
@@ -49,9 +49,7 @@
 
     }
 
-    .nav-item {
-      padding: 0px 15px;
-    }
+
 
     .btn-secondary:hover {
       background-color: #ce28c6;
