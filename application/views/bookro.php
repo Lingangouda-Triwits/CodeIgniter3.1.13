@@ -75,7 +75,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="bookroo.php">Home</a>
+              <a class="nav-link active" aria-current="page" href="bookro.php">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">AboutUS</a>
