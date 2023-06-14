@@ -47,10 +47,6 @@
       background: transparent;
     }
 
-    }
-
-
-
     .btn-secondary:hover {
       background-color: #ce28c6;
 
