@@ -55,49 +55,55 @@
     h1::first-letter {
       color: #ce28c6
     }
-  </style>
+
+    h2::first-letter {
+      color: #ce28c6
+    }
+
+
+    </style>
   </head>
   <body>
-  <div>
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ce28c6;">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Bookro</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/codeigniter3.1.13/RegController/index">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">AboutUS</a>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ce28c6;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Bookro</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/codeigniter3.1.13/RegController/index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">AboutUS</a>
 
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">ContactUS</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ContactUS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
 
-  <h1 class="text-center">Book your Car for Travel</h1>
-  <h2 class="text-center">Continue as</h2>
+    <h1 class="text-center">Book your Car for Travel</h1>
+    <h2 class="text-center">Continue as</h2>
 
 
-  <a href="customerlogin.php" style="text-decoration:none;"> <button class="d-grid gap-2 col-4 mx-auto btn1 btn btn-secondary" type="button"> Customer
-   </button>
-  </a>
-  <a href="driver.php" style="text-decoration:none;"> <button class="d-grid gap-2 col-4 mx-auto btn1 btn btn-secondary" type="button"> Driver
+    <a href="customerlogin.php" style="text-decoration:none;"> <button class="d-grid gap-2 col-4 mx-auto btn1 btn btn-secondary" type="button"> Customer
     </button>
-  </a>
+    </a>
+    <a href="driver.php" style="text-decoration:none;"> <button class="d-grid gap-2 col-4 mx-auto btn1 btn btn-secondary" type="button"> Driver
+    </button>
+    </a>
     
 
     <!-- the cdn of jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  </body>
+</body>
 
 </html>
