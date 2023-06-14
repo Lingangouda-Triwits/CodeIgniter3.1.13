@@ -26,7 +26,7 @@
     body {
       width: 100vw;
       height: 100vh;
-      background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("images/cardrive.jpg");
+      background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("./images/cardrive.png");
       background-size: cover;
       background-position: center;
       
@@ -75,11 +75,11 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="bookro.php">Home</a>
+              <a class="nav-link active" aria-current="page" href="/codeigniter3.1.13/RegController/index">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">AboutUS</a>
-              
+
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">ContactUS</a>
