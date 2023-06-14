@@ -20,7 +20,7 @@ class RegController extends CI_Controller
 		$this->RegModel->insert_data($name,$email,$phone,$password);
 
 	}else{
-	$this->load->view('RegView');
+	$this->load->view('bookro.php');
 	}
 	}
 }
