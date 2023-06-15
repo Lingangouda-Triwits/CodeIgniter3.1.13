@@ -40,7 +40,7 @@
     }
 
 
-    .text-center {
+    h1 {
         margin: 40px 0 60px 0;
         color: oldlace;
     }
@@ -65,6 +65,32 @@
     }
     h1::first-letter {
       color: #ce28c6
+    }
+
+    .my-class{
+        margin: 30px 0;
+    }
+
+    .btn-outline-primary{
+        border: 3px solid #ce28c6;
+        border-radius: 20px;
+        outline: none;
+        padding: 5px;
+        margin: 2px 0px;
+        font-weight: bold;
+        background: transparent;
+        text-align: center;
+        width:100px;
+
+    }
+
+    .btn-outline-primary:hover{
+        background-color: #ce28c6;
+        transition:1.7s;
+        border: 3px solid #ce28c6;
+        border-radius: 20px;
+        outline: none;
+
     }
     </style>
 </head>
@@ -109,9 +135,22 @@
 
     <form action="#" method="POST">
 
-    <input class="d-grid gap-2 col-4 mx-auto btn1" type="text" name="email" id="email" placeholder="Enter Email">
-    <input class="d-grid gap-2 col-4 mx-auto btn1" type="text" name="password" id="password" placeholder="Enter Password">
-    <a href="#" style="text-decoration:none";> <button class="d-grid gap-2 col-2 mx-auto btn1 btn btn-secondary" type="submit" name="" id="">  Login </button></a>
+    <input class="d-grid gap-2 col-4 mx-auto btn1 my-class" type="text" name="email" id="email" placeholder="Enter Email">
+    <input class="d-grid gap-2 col-4 mx-auto btn1 my-class" type="text" name="password" id="password" placeholder="Enter Password">
+
+    <h5 class="text-center" style="color:oldlace;">Continue as</h5>
+
+            <div class="text-center ">
+                <div class="btn-group justify-content-center" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="success-outlined">Customer</label>
+
+                    <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="danger-outlined">Driver</label>
+                </div>
+            </div>
+
+    <a href="#" style="text-decoration:none";> <button class="d-grid gap-2 col-2 mx-auto btn1 btn btn-secondary my-class" type="submit" name="" id="">  Login </button></a>
 
     </form>
 
