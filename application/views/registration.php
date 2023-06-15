@@ -34,22 +34,26 @@
     body {
         width: 100vw;
         height: 100vh;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("./images/cardrive.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("images/cardrive.jpg");
         background-size: cover;
         background-position: center;
     }
 
-    .text-center {
-        margin: 22px 0px;
+
+    h1.text-center {
+        margin: 30px 0px;
         color: oldlace;
     }
-    
+    .text-center {
+        margin: 10px 0px;
+        color: oldlace;
+    }
     .btn1 , .btn-outline-primary{
         border: 3px solid #ce28c6;
         border-radius: 20px;
         outline: none;
-        padding: 10px;
-        margin: 20px 0px;
+        padding: 5px;
+        margin: 2px 0px;
         font-weight: bold;
         background: transparent;
         text-align: center;
@@ -61,6 +65,8 @@
 
   .btn-secondary:hover{
       background-color: #ce28c6;
+      transition:1.7s;
+
   }
   h1::first-letter {
       color: #ce28c6
@@ -74,7 +80,18 @@
         outline: none;
 
     }
-  </style>
+    .btn{
+        width:100px;
+    }
+    .btn1::placeholder {
+        color:aliceblue;
+    }
+    input{
+        color: aliceblue;
+    
+    }
+
+</style>
 </head>
 
 <body>
@@ -111,13 +128,26 @@
 
     <div class="container">
 
-        <h1 class="text-center">Welcome to Driver Registration Page</h1>
+        <h1 class="text-center">Welcome to Registration Page</h1>
 
-        <form action="driversignupdatabase.php" method="POST">
+        <form action="#" method="POST">
 
-            <input class="d-grid gap-2 col-6 mx-auto btn1" type="text" name="name" id="name" placeholder="Enter Your Name">
+            <input class="d-grid gap-2 col-5 mx-auto btn1" type="text" name="name" id="name" placeholder="Enter Your FullName">
 
-            <h3 class="text-center">Gender</h3>
+            <input class="d-grid gap-2 col-5 mx-auto btn1" type="text" name="email" id="email" placeholder="Enter Your Email">
+
+            <input class="d-grid gap-2 col-5 mx-auto btn1" type="text" name="mobile" id="mobile" placeholder="Enter Your Mobile Number">
+
+            <input class="d-grid gap-2 col-5 mx-auto btn1" type="password" name="password" id="password" placeholder="Enter Your password">
+
+            <input class="d-grid gap-2 col-5 mx-auto btn1" type="password" name="confirm_password" id="confirm_password" placeholder="Enter password again">
+
+            <input class="d-grid gap-2 col-5 mx-auto btn1 " style="height: 40px;" type="file" name="name" id="name">
+
+
+
+
+            <h5 class="text-center">Gender</h5>
 
             <!-- The three Radio Buttons of Gender -->
             <div class="text-center">
@@ -134,7 +164,8 @@
             </div>
             <!-- End of Radio Buttons -->
 
-            <input class="d-grid gap-2 col-6 mx-auto btn1" type="tel" name="phone" id="" placeholder="Enter Mobile Number">
+
+            <h5 class="text-center">Continue as</h5>
 
             <div class="text-center">
                 <div class="btn-group justify-content-center" role="group" aria-label="Basic radio toggle button group">
@@ -145,7 +176,7 @@
                     <label class="btn btn-outline-primary" for="danger-outlined">Driver</label>
                 </div>
             </div>
-            <a href="#" style="text-decoration:none;"><button class="d-grid gap-2 col-4 mx-auto btn1 btn-secondary" type="submit" name="" id="">  Verify </button></a>
+            <a href="#" style="text-decoration:none;"><button class="d-grid gap-2 col-2 mx-auto btn1 btn-secondary" type="submit" name="" id="">  Register </button></a>
 
         </form>
 

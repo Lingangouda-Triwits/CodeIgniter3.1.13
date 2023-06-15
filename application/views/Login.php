@@ -34,13 +34,14 @@
     body {
         width: 100vw;
         height: 100vh;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("./images/cardrive.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("images/cardrive.jpg");
         background-size: cover;
         background-position: center;
     }
-    
+
+
     .text-center {
-        margin: 18px 0px;
+        margin: 40px 0 60px 0;
         color: oldlace;
     }
     
@@ -48,8 +49,8 @@
         border: 3px solid #ce28c6;
         border-radius: 20px;
         outline: none;
-        padding: 10px;
-        margin: 50px 0px;
+        padding: 5px;
+        margin: 5vh 0px;
         font-weight: bold;
         background: transparent;
         text-align: center;
@@ -60,6 +61,7 @@
 
   .btn-secondary:hover{
       background-color: #ce28c6;
+      transition:1.7s;
     }
     h1::first-letter {
       color: #ce28c6
@@ -105,13 +107,13 @@
 
     <h1 class="text-center">Enter Below Credentials to Login</h1>
 
-    <!-- <form action="" method="POST"> -->
+    <form action="#" method="POST">
 
-    <input class="d-grid gap-2 col-6 mx-auto btn1" type="tel" name="" id="" placeholder="Enter Mobile Number">
-    <input class="d-grid gap-2 col-6 mx-auto btn1" type="tel" name="" id="" placeholder="Enter Password">
-    <a href="driverprofile.php" style="text-decoration:none";> <button class="d-grid gap-2 col-4 mx-auto btn1 btn btn-secondary" type="submit" name="" id="">  Login </button></a>
+    <input class="d-grid gap-2 col-4 mx-auto btn1" type="text" name="email" id="email" placeholder="Enter Email">
+    <input class="d-grid gap-2 col-4 mx-auto btn1" type="text" name="password" id="password" placeholder="Enter Password">
+    <a href="#" style="text-decoration:none";> <button class="d-grid gap-2 col-2 mx-auto btn1 btn btn-secondary" type="submit" name="" id="">  Login </button></a>
 
-    <!-- </form> -->
+    </form>
 
 
 </body>
