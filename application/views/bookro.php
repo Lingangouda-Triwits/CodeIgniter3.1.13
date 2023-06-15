@@ -51,6 +51,9 @@
       background-color: #ce28c6;
 
     }
+    .nav-item {
+        padding: 0px 15px;
+    }
 
     h1::first-letter {
       color: #ce28c6
@@ -88,7 +91,7 @@
                             <a class="nav-link" href="<?php echo base_url().'Welcome/register'?>">Register</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Login</a>
+                            <a class="nav-link" href="<?php echo base_url().'Welcome/login'?>">Login</a>
                         </li>
 
                         <!-- <div class="dropdown">

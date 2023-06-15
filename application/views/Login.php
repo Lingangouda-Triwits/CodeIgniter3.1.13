@@ -23,7 +23,7 @@
     -->
 
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
-    <title>Bookroo website</title>
+    <title>Bookro website</title>
     
     <style>
         * {
@@ -38,7 +38,7 @@
         background-size: cover;
         background-position: center;
     }
-
+    
     .text-center {
         margin: 18px 0px;
         color: oldlace;
@@ -49,27 +49,28 @@
         border-radius: 20px;
         outline: none;
         padding: 10px;
-        margin: 20px 0px;
+        margin: 50px 0px;
         font-weight: bold;
         background: transparent;
         text-align: center;
     }
-
     .nav-item {
         padding: 0px 15px;
     }
 
   .btn-secondary:hover{
       background-color: #ce28c6;
-  }
-  h1::first-letter {
+    }
+    h1::first-letter {
       color: #ce28c6
     }
-  </style>
+    </style>
 </head>
 
 <body>
-<div>
+
+
+    <div>
         <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ce28c6;">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Bookro</a>
@@ -90,10 +91,10 @@
                             <a class="nav-link" href="#">ContactUS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="<?php echo base_url().'Welcome/register'?>">Register</a>
+                            <a class="nav-link" href="<?php echo base_url().'Welcome/register'?>">Register</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link "  href="<?php echo base_url().'Welcome/login'?>">Login</a>
+                            <a class="nav-link active" aria-current="page" href="<?php echo base_url().'Welcome/login'?>">Login</a>
                         </li>
                         
                     </ul>
@@ -102,36 +103,15 @@
         </nav>
     </div>
 
-    <h1 class="text-center">Welcome to Driver Registration Page</h1>
+    <h1 class="text-center">Enter Below Credentials to Login</h1>
 
-    <form action="driversignupdatabase.php" method="POST">
+    <!-- <form action="" method="POST"> -->
 
-    <input class="d-grid gap-2 col-6 mx-auto btn1" type="text" name="name" id="name" placeholder="Enter Your Name">
+    <input class="d-grid gap-2 col-6 mx-auto btn1" type="tel" name="" id="" placeholder="Enter Mobile Number">
+    <input class="d-grid gap-2 col-6 mx-auto btn1" type="tel" name="" id="" placeholder="Enter Password">
+    <a href="driverprofile.php" style="text-decoration:none";> <button class="d-grid gap-2 col-4 mx-auto btn1 btn btn-secondary" type="submit" name="" id="">  Login </button></a>
 
-    <h3 class="text-center">Gender</h3>
-
-    <!-- The three Radio Buttons of Gender -->
-    <div class="text-center">
-        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-            <input type="radio" class="btn-check" name="gender" id="btnradio1" autocomplete="off" checked>
-            <label class="btn btn-outline-primary" for="btnradio1">Male</label>
-
-            <input type="radio" class="btn-check" name="gender" id="btnradio2" autocomplete="off">
-            <label class="btn btn-outline-primary" for="btnradio2">Female</label>
-
-            <input type="radio" class="btn-check" name="gender" id="btnradio3" autocomplete="off">
-            <label class="btn btn-outline-primary" for="btnradio3">Other</label>
-        </div>
-    </div>
-    <!-- End of Radio Buttons -->
-
-    <input class="d-grid gap-2 col-6 mx-auto btn1" type="tel" name="phone" id="" placeholder="Enter Mobile Number">
-    <button class="d-grid gap-2 col-4 mx-auto btn1 btn-secondary" type="submit" name="" id="">Send OTP</button>
-    <input class="d-grid gap-2 col-6 mx-auto btn1" type="tel" name="" id="" placeholder="Enter Received OTP">
-    <a href="setpassword.php" style="text-decoration:none;"><button class="d-grid gap-2 col-4 mx-auto btn1 btn-secondary" type="submit" name="" id="">  Verify </button>
-    </a>
-
-    </form>
+    <!-- </form> -->
 
 
 </body>
