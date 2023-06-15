@@ -15,7 +15,7 @@
         crossorigin="anonymous"></script>
 
 
-    <link rel="shortcut icon" href="/images/favicon1.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <title>Bookro website</title>
     <style>
     * {
@@ -75,7 +75,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/codeigniter3.1.13/RegController/index">Home</a>
+                            <a class="nav-link active" aria-current="page" href="/codeigniter3.1.13/">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">AboutUS</a>
@@ -84,6 +84,23 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">ContactUS</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="<?php echo base_url().'Welcome/register'?>">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Login</a>
+                        </li>
+
+                        <!-- <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown button</button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                        </div> -->
+                        
                     </ul>
                 </div>
             </div>
@@ -91,7 +108,7 @@
     </div>
 
     <h1 class="text-center">Book your Car for Travel</h1>
-    <h2 class="text-center">Continue as</h2>
+    <!-- <h2 class="text-center">Continue as</h2>
 
 
     <a href="customerlogin.php" style="text-decoration:none;"> <button class="d-grid gap-2 col-4 mx-auto btn1 btn btn-secondary" type="button"> Customer
@@ -99,7 +116,7 @@
     </a>
     <a href="driver.php" style="text-decoration:none;"> <button class="d-grid gap-2 col-4 mx-auto btn1 btn btn-secondary" type="button"> Driver
     </button>
-    </a>
+    </a> -->
     
 
     <!-- the cdn of jquery -->
