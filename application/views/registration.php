@@ -40,11 +40,11 @@
     }
 
     .text-center {
-        margin: 18px 0px;
+        margin: 22px 0px;
         color: oldlace;
     }
     
-    .btn1 {
+    .btn1 , .btn-outline-primary{
         border: 3px solid #ce28c6;
         border-radius: 20px;
         outline: none;
@@ -65,11 +65,20 @@
   h1::first-letter {
       color: #ce28c6
     }
+
+    .btn-outline-primary:hover{
+        background-color: #ce28c6;
+        transition:1.7s;
+        border: 3px solid #ce28c6;
+        border-radius: 20px;
+        outline: none;
+
+    }
   </style>
 </head>
 
 <body>
-<div>
+    <div>
         <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ce28c6;">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Bookro</a>
@@ -84,7 +93,6 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">AboutUS</a>
-
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">ContactUS</a>
@@ -95,45 +103,55 @@
                         <li class="nav-item ">
                             <a class="nav-link "  href="<?php echo base_url().'Welcome/login'?>">Login</a>
                         </li>
-                        
                     </ul>
                 </div>
             </div>
         </nav>
     </div>
 
-    <h1 class="text-center">Welcome to Driver Registration Page</h1>
+    <div class="container">
 
-    <form action="driversignupdatabase.php" method="POST">
+        <h1 class="text-center">Welcome to Driver Registration Page</h1>
 
-    <input class="d-grid gap-2 col-6 mx-auto btn1" type="text" name="name" id="name" placeholder="Enter Your Name">
+        <form action="driversignupdatabase.php" method="POST">
 
-    <h3 class="text-center">Gender</h3>
+            <input class="d-grid gap-2 col-6 mx-auto btn1" type="text" name="name" id="name" placeholder="Enter Your Name">
 
-    <!-- The three Radio Buttons of Gender -->
-    <div class="text-center">
-        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-            <input type="radio" class="btn-check" name="gender" id="btnradio1" autocomplete="off" checked>
-            <label class="btn btn-outline-primary" for="btnradio1">Male</label>
+            <h3 class="text-center">Gender</h3>
 
-            <input type="radio" class="btn-check" name="gender" id="btnradio2" autocomplete="off">
-            <label class="btn btn-outline-primary" for="btnradio2">Female</label>
+            <!-- The three Radio Buttons of Gender -->
+            <div class="text-center">
+                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="gender" id="btnradio1" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btnradio1">Male</label>
 
-            <input type="radio" class="btn-check" name="gender" id="btnradio3" autocomplete="off">
-            <label class="btn btn-outline-primary" for="btnradio3">Other</label>
-        </div>
+                    <input type="radio" class="btn-check" name="gender" id="btnradio2" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btnradio2">Female</label>
+
+                    <input type="radio" class="btn-check" name="gender" id="btnradio3" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btnradio3">Other</label>
+                </div>
+            </div>
+            <!-- End of Radio Buttons -->
+
+            <input class="d-grid gap-2 col-6 mx-auto btn1" type="tel" name="phone" id="" placeholder="Enter Mobile Number">
+
+            <div class="text-center">
+                <div class="btn-group justify-content-center" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="success-outlined">Customer</label>
+
+                    <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="danger-outlined">Driver</label>
+                </div>
+            </div>
+            <a href="#" style="text-decoration:none;"><button class="d-grid gap-2 col-4 mx-auto btn1 btn-secondary" type="submit" name="" id="">  Verify </button></a>
+
+        </form>
+
+
+
     </div>
-    <!-- End of Radio Buttons -->
-
-    <input class="d-grid gap-2 col-6 mx-auto btn1" type="tel" name="phone" id="" placeholder="Enter Mobile Number">
-    <button class="d-grid gap-2 col-4 mx-auto btn1 btn-secondary" type="submit" name="" id="">Send OTP</button>
-    <input class="d-grid gap-2 col-6 mx-auto btn1" type="tel" name="" id="" placeholder="Enter Received OTP">
-    <a href="setpassword.php" style="text-decoration:none;"><button class="d-grid gap-2 col-4 mx-auto btn1 btn-secondary" type="submit" name="" id="">  Verify </button>
-    </a>
-
-    </form>
-
-
 </body>
 
 </html>
